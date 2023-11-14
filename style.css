@@ -27,7 +27,19 @@ body {
   display: none;
 }
 
+.comment-box {
+  display: none;
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
 .feedback-box:hover .rate {
+  display: block;
+}
+
+.feedback-box:hover .comment-box {
   display: block;
 }
 
@@ -65,11 +77,4 @@ body {
 .rate>input:checked~label:hover~label,
 .rate>label:hover~input:checked~label {
   color: #c59b08;
-}
-
-.comment-box {
-  margin-top: 10px;
-  width: 100%;
-  padding: 5px;
-  box-sizing: border-box;
 }
