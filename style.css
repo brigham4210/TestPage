@@ -11,10 +11,10 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #3498db; /* Blue background color */
-  color: #fff; /* Text color */
+  background-color: #3498db;
+  color: #fff;
   padding: 10px;
-  border-top-right-radius: 10px; /* Optional: Add rounded corners */
+  border-top-right-radius: 10px;
   display: flex;
   align-items: center;
 }
