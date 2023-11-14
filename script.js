@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   rate.addEventListener('change', function () {
-    // Instead of displaying the comment box on every change event, 
+    // Instead of displaying the comment box on every change event,
     // check if a star is selected (assuming a value greater than 0 means a star is selected)
-    if (parseInt(rate.value) > 0) {
+    if (parseInt(document.querySelector('input[name="rate"]:checked').value) > 0) {
       commentBox.style.display = 'block';
     }
   });
