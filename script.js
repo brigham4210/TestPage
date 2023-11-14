@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const rate = document.getElementById('starRating');
   const commentBox = document.getElementById('commentBox');
 
+  // Hide the comment box initially
+  commentBox.style.display = 'none';
+
   feedbackBox.addEventListener('mouseenter', function () {
     rate.style.display = 'block';
   });
@@ -10,16 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
   feedbackBox.addEventListener('mouseleave', function () {
     if (!rate.contains(document.activeElement)) {
       rate.style.display = 'none';
-      // Comment out the line below so that the comment box doesn't hide on mouseleave
-      // commentBox.style.display = 'none';
     }
   });
 
   rate.addEventListener('change', function () {
-    // Instead of displaying the comment box on every change event,
-    // check if a star is selected (assuming a value greater than 0 means a star is selected)
-    if (parseInt(document.querySelector('input[name="rate"]:checked').value) > 0) {
-      commentBox.style.display = 'block';
-    }
+    // Display the comment box when a star is clicked
+    commentBox.style.display = 'block';
   });
 });
