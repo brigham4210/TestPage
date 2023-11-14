@@ -3,6 +3,22 @@
   padding: 0;
 }
 
+body {
+  height: 100vh;
+}
+
+.feedback-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #3498db; /* Blue background color */
+  color: #fff; /* Text color */
+  padding: 10px;
+  border-top-right-radius: 10px; /* Optional: Add rounded corners */
+  display: flex;
+  align-items: center;
+}
+
 .rate {
   float: left;
   height: 46px;
