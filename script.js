@@ -15,8 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   rate.addEventListener('change', function () {
-    if (rate.querySelector(':checked')) {
-      commentBox.style.display = 'block';
-    }
+    commentBox.style.display = 'block';
   });
 });
