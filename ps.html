@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Encourage</title>
+  <title>Countdown to Graduation</title>
   <style>
     body {
       display: flex;
@@ -9,13 +9,48 @@
       align-items: center;
       height: 100vh;
       margin: 0;
+      flex-direction: column;
+    }
+    p {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
   <div>
-    <p style="font-size: 10em;">You can do it!</p>
-    <p>Only more ? days until you graduate</p>
+    <p id="countdownText">Calculating days until graduation...</p>
   </div>
+
+  <script>
+    // Function to calculate days until graduation
+    function calculateDaysUntilGraduation() {
+      // Graduation date (YYYY, MM-1, DD)
+      const graduationDate = new Date('2023', '12', '14'); // Change this to your graduation date
+
+      // Current date
+      const currentDate = new Date();
+
+      // Calculate the difference in milliseconds
+      const difference = graduationDate.getTime() - currentDate.getTime();
+
+      // Calculate days from milliseconds
+      const daysUntilGraduation = Math.ceil(difference / (1000 * 60 * 60 * 24));
+
+      return daysUntilGraduation;
+    }
+
+    // Update the countdown text
+    function updateCountdown() {
+      const days = calculateDaysUntilGraduation();
+      const countdownText = document.getElementById('countdownText');
+      countdownText.textContent = `Only ${days} days until you graduate`;
+    }
+
+    // Update the countdown initially and every second (optional)
+    updateCountdown();
+    setInterval(updateCountdown, 1000); // Update every second
+  </script>
 </body>
 </html>
