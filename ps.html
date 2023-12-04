@@ -16,10 +16,14 @@
       text-align: center;
       margin-bottom: 10px;
     }
+    .encouragement {
+      font-size: 4em; /* Increasing the size of "You can do it!" */
+    }
   </style>
 </head>
 <body>
   <div>
+    <p class="encouragement">You can do it!</p>
     <p id="countdownText">Calculating days until graduation...</p>
   </div>
 
@@ -27,7 +31,7 @@
     // Function to calculate days until graduation
     function calculateDaysUntilGraduation() {
       // Graduation date (YYYY, MM-1, DD)
-      const graduationDate = new Date('2023', '12', '14'); // Change this to your graduation date
+      const graduationDate = new Date('2023', '11', '14'); // Change this to your graduation date
 
       // Current date
       const currentDate = new Date();
