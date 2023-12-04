@@ -1,26 +1,12 @@
-/* styles.css */
-
-/* Resetting default margin and padding for all elements */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-/* Centering text */
-.center-text {
+p {
+    font-size: 2em;
     text-align: center;
-    margin-top: 100px; /* Adjust as needed */
-}
-
-/* Making text bigger */
-.bigger-text {
-    font-size: 360em;
 }
