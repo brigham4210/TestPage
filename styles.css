@@ -4,8 +4,15 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-color: black;
 }
 
 div {
   text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 300px;
+  color: green;
 }
