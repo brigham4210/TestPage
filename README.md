@@ -1,5 +1,5 @@
 # TestPage
 
-[STAR](https://brigham4210.github.io/TestPage/star.html)
+[STAR](https://brigham4-test.glitch.me/star.html)
 
-[CENTER](https://brigham4210.github.io/TestPage/ps.html)
+[Graduation](https://brighams-test.glitch.me/ps.html)
